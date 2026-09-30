@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Mane Naturals | Natural Hair Care from Ghana</title>
-<meta name="description" content="Mane Naturals Hair Oil Mix, Hair Stimulating Butter, Black Soap Shampoo and Nourishing Conditioner. Natural hair products that help you take care of and pamper your strands.">
+<meta name="description" content="Mane Naturals: Hair Oil Mix, Hair Stimulating Butter, African Black Soap Shampoo and Rinse Out Conditioner. Natural hair care from Ghana. Order on Instagram @_manenaturals.">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#0a4d26">
+<meta name="theme-color" content="#080a07">
 <link rel="canonical" href="https://mane-naturals.vercel.app/">
 <meta property="og:url" content="https://mane-naturals.vercel.app/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Mane Naturals">
 <meta property="og:title" content="Mane Naturals | Natural Hair Care from Ghana">
-<meta property="og:description" content="Hair Oil Mix (60 GHS), Hair Stimulating Butter, Black Soap Shampoo and Nourishing Conditioner. Order on Instagram @_manenaturals.">
+<meta property="og:description" content="Hair Oil Mix (60 GHS), Stimulating Butter, African Black Soap Shampoo and Rinse Out Conditioner. Order on Instagram @_manenaturals.">
 <meta property="og:image" content="https://mane-naturals.vercel.app/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -25,143 +25,172 @@
 <meta name="twitter:description" content="Natural hair products that help you take care of and pamper your strands.">
 <meta name="twitter:image" content="https://mane-naturals.vercel.app/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
-<header class="nav">
-  <a class="logo" href="#top">🦁 Mane <span>Naturals</span></a>
-  <nav>
-    <a href="#why">Why Mane</a>
-    <a href="#products">Products</a>
-    <a href="#tips">Hair 101</a>
-    <a href="#results">Results</a>
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Mane Naturals home"><img src="icon-192.png" alt="" width="34" height="34"><span>Mane <em>Naturals</em></span></a>
+  <nav class="links" aria-label="Main">
+    <a href="#products">Products</a><a href="#why">Why Mane</a><a href="#hair101">Hair 101</a><a href="#results">Results</a>
   </nav>
-  <a class="btn btn-sm" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order now</a>
+  <a class="btn btn-lime nav-cta" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button>
 </header>
+<div class="sheet" id="sheet" hidden>
+  <a href="#products">Products</a><a href="#why">Why Mane</a><a href="#hair101">Hair 101</a><a href="#results">Results</a>
+  <a class="btn btn-lime" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order on Instagram</a>
+</div>
 
 <main id="top">
 <section class="hero">
-  <div class="hero-text">
-    <p class="eyebrow">Made in Ghana 🇬🇭</p>
-    <h1>Hair Oil Mix for <em>stronger, fuller</em> strands</h1>
-    <p class="lead">Essential oils and minerals in one bottle. Oil your scalp, pamper your strands and grow the mane you want.</p>
-    <div class="hero-cta">
-      <a class="btn" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order on Instagram</a>
-      <a class="btn btn-ghost" href="#products">See products</a>
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="dot"></span> Made in Ghana · Natural hair care</p>
+    <h1 class="split" aria-label="Oil it. Grow it. Own your mane.">
+      <span class="w">Oil it.</span> <span class="w">Grow it.</span> <span class="w lime">Own your <em>mane.</em></span>
+    </h1>
+    <p class="lead">Essential oils and minerals, bottled for textured hair. Nourish your scalp. Pamper your strands.</p>
+    <div class="cta-row">
+      <a class="btn btn-lime" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order on Instagram <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-line" href="#products">Shop the range</a>
     </div>
-    <p class="price-note">Hair Oil Mix: <strong>60 GHS</strong> a bottle</p>
   </div>
-  <div class="hero-art">
-    <div class="sun"></div>
-    <img src="img/bottles.jpg" alt="Mane Naturals Hair Oil Mix bottles" fetchpriority="high">
+
+  <div class="hero-visual" id="visual">
+    <div class="ring"></div>
+    <figure class="arch" id="arch">
+      <img src="img/hero.jpg" alt="Mane Naturals Hair Oil Mix bottles with the lion label" fetchpriority="high" width="600" height="800">
+    </figure>
+    <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+      <defs><path id="c" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+      <text><textPath href="#c" startOffset="0">100% NATURAL • MADE IN GHANA • MANE NATURALS •</textPath></text>
+      <circle cx="100" cy="100" r="44" class="b-fill"/>
+      <text x="100" y="98" text-anchor="middle" class="b-big">60</text>
+      <text x="100" y="118" text-anchor="middle" class="b-sm">GHS · OIL</text>
+    </svg>
+    <div class="chip chip-a"><b>Hair Oil Mix</b><span>100ml · essential oils + minerals</span></div>
   </div>
+
+  <a class="scroll" href="#products" aria-label="Scroll to products"><span></span></a>
 </section>
 
-<section class="strip">
-  <div><strong>100% Natural</strong><span>Essential oils &amp; minerals</span></div>
-  <div><strong>Protective-style friendly</strong><span>For braids, twists &amp; more</span></div>
-  <div><strong>Handmade in Ghana</strong><span>Small batch care</span></div>
-  <div><strong>DM to order</strong><span>Fast, friendly service</span></div>
-</section>
-
-<section id="why" class="section center">
-  <h2>Why choose Mane Naturals?</h2>
-  <p class="sub">Simple, effective natural hair care. Your wash day doesn't have to be complicated.</p>
-  <div class="why">
-    <ul class="why-list">
-      <li><span>🌿</span><div><h3>Natural ingredients</h3><p>Essential oils and minerals that nourish your scalp and strands.</p></div></li>
-      <li><span>💧</span><div><h3>Deep moisture</h3><p>Butter, oil, shampoo and conditioner built for textured hair.</p></div></li>
-    </ul>
-    <img class="why-img" src="img/hold-bottle.jpg" alt="Holding Mane Naturals Hair Oil Mix">
-    <ul class="why-list">
-      <li><span>🦁</span><div><h3>Grow your mane</h3><p>Made to support healthy growth and fuller edges.</p></div></li>
-      <li><span>✅</span><div><h3>Quality, not clutter</h3><p>Good hair products don't have to be many. Just effective.</p></div></li>
-    </ul>
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Hair Oil Mix</span><i>✦</i><span>Stimulating Butter</span><i>✦</i><span>African Black Soap Shampoo</span><i>✦</i><span>Rinse Out Conditioner</span><i>✦</i>
+    <span>Hair Oil Mix</span><i>✦</i><span>Stimulating Butter</span><i>✦</i><span>African Black Soap Shampoo</span><i>✦</i><span>Rinse Out Conditioner</span><i>✦</i>
   </div>
+</div>
+
+<section class="stats reveal">
+  <div><b data-count="4">4</b><span>hand-made products</span></div>
+  <div><b data-count="100" data-suffix="%">100%</b><span>natural ingredients</span></div>
+  <div><b>GH</b><span>made in Ghana</span></div>
 </section>
 
-<section id="products" class="section center">
-  <h2>Our products</h2>
-  <p class="sub">The full Mane Naturals hair care set.</p>
-  <div class="products">
-    <article class="card">
-      <div class="arch"><img src="img/oil-grass.jpg" alt="Hair Oil Mix"></div>
+<section id="products" class="sec">
+  <div class="head reveal"><p class="kicker">The range</p><h2>Four products. <em>One routine.</em></h2><p class="sub">Cleanse, condition, moisturise, nourish. Swipe to explore.</p></div>
+  <div class="rail" id="rail">
+    <article class="pcard reveal">
+      <div class="pimg"><img src="img/p-shampoo.jpg" alt="African Black Soap Shampoo 500ml" loading="lazy"></div>
+      <span class="tag">Cleanse</span>
+      <h3>African Black Soap Shampoo</h3>
+      <p>Gentle, natural cleansing that keeps wash day simple. 500ml.</p>
+      <div class="buy"><span>DM for price</span><a class="btn btn-lime btn-sm" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order</a></div>
+    </article>
+    <article class="pcard reveal">
+      <div class="pimg"><img src="img/p-conditioner.jpg" alt="Rinse Out Conditioner 500ml" loading="lazy"></div>
+      <span class="tag">Condition</span>
+      <h3>Rinse Out Conditioner</h3>
+      <p>Soft, detangled, moisturised strands after every wash. 500ml.</p>
+      <div class="buy"><span>DM for price</span><a class="btn btn-lime btn-sm" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order</a></div>
+    </article>
+    <article class="pcard reveal">
+      <div class="pimg"><img src="img/p-butter.jpg" alt="Hair Stimulating Butter" loading="lazy"></div>
+      <span class="tag">Moisturise</span>
+      <h3>Hair Stimulating Butter</h3>
+      <p>Rich butter that seals in moisture and wakes up the scalp.</p>
+      <div class="buy"><span>DM for price</span><a class="btn btn-lime btn-sm" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order</a></div>
+    </article>
+    <article class="pcard hot reveal">
+      <div class="pimg"><img src="img/p-oil.jpg" alt="Hair Oil Mix 100ml" loading="lazy"></div>
       <span class="tag">Best seller</span>
       <h3>Hair Oil Mix</h3>
-      <p>Essential oils and minerals for your scalp and strands.</p>
-      <p class="price">60 GHS</p>
-      <a class="btn btn-sm" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order</a>
-    </article>
-    <article class="card">
-      <div class="arch"><img src="img/butter.jpg" alt="Hair Stimulating Butter"></div>
-      <span class="tag">Moisture</span>
-      <h3>Hair Stimulating Butter</h3>
-      <p>Rich butter that seals in moisture and stimulates the scalp.</p>
-      <p class="price">DM for price</p>
-      <a class="btn btn-sm" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order</a>
-    </article>
-    <article class="card">
-      <div class="arch"><img src="img/shampoo.jpg" alt="Black Soap Shampoo"></div>
-      <span class="tag">Cleanse</span>
-      <h3>Black Soap Shampoo</h3>
-      <p>Gentle cleansing that keeps wash day simple.</p>
-      <p class="price">DM for price</p>
-      <a class="btn btn-sm" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order</a>
-    </article>
-    <article class="card">
-      <div class="arch"><img src="img/conditioner.jpg" alt="Nourishing Conditioner"></div>
-      <span class="tag">Nourish</span>
-      <h3>Nourishing Conditioner</h3>
-      <p>Soft, detangled strands after every wash.</p>
-      <p class="price">DM for price</p>
-      <a class="btn btn-sm" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order</a>
+      <p>Essential oils and minerals for your scalp and strands. 100ml.</p>
+      <div class="buy"><span class="price">60 GHS</span><a class="btn btn-lime btn-sm" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order</a></div>
     </article>
   </div>
 </section>
 
-<section id="tips" class="section center tint">
-  <h2>Hair 101: protective styles</h2>
-  <p class="sub">Dos and don'ts, and styles to try. What works for someone might not work for you. Everyone is different.</p>
-  <div class="tips">
-    <img src="img/tip-1.jpg" alt="How to get the best out of protective styles">
-    <img src="img/tip-2.jpg" alt="What works for someone might not work for you">
-    <img src="img/tip-3.jpg" alt="Find your hair type and follow a routine">
-    <img src="img/tip-4.jpg" alt="Examples of protective styles">
+<section class="set reveal">
+  <img src="img/set.jpg" alt="The full Mane Naturals range: shampoo, conditioner, butter and hair oil" loading="lazy">
+  <div>
+    <p class="kicker">The full set</p>
+    <h2>Good hair care doesn't have to be <em>complicated.</em></h2>
+    <p class="sub">Quality products that are effective, not necessarily many. Ask us to put together a routine for your hair type.</p>
+    <a class="btn btn-lime" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Message us</a>
   </div>
-  <img class="styles" src="img/styles.jpg" alt="Cornrows, mini braids, mini twists and African threading">
+</section>
+
+<section id="why" class="sec">
+  <div class="head reveal"><p class="kicker">Why Mane</p><h2>Rooted in <em>nature.</em></h2></div>
+  <ol class="why">
+    <li class="reveal"><b>01</b><h3>Natural ingredients</h3><p>Essential oils and minerals that nourish your scalp and strands.</p></li>
+    <li class="reveal"><b>02</b><h3>Made for textured hair</h3><p>Butter, oil, shampoo and conditioner built around natural hair.</p></li>
+    <li class="reveal"><b>03</b><h3>Grow your mane</h3><p>Care that supports healthy growth, fuller edges and length retention.</p></li>
+    <li class="reveal"><b>04</b><h3>Simple routines</h3><p>Your wash day doesn't have to be complicated. We keep it easy.</p></li>
+  </ol>
+</section>
+
+<section id="hair101" class="sec tint">
+  <div class="head reveal"><p class="kicker">Hair 101</p><h2>Protective styles: <em>dos and don'ts.</em></h2><p class="sub">What works for someone might not work for you. Everyone is different.</p></div>
+  <div class="rail slides" id="slides">
+    <img src="img/tip-1.jpg" alt="How to get the best out of protective styles" loading="lazy">
+    <img src="img/tip-2.jpg" alt="What works for someone might not necessarily work for you" loading="lazy">
+    <img src="img/tip-3.jpg" alt="Find your hair type and follow a routine that works best for you" loading="lazy">
+    <img src="img/tip-5.jpg" alt="Length retention: dos and don'ts" loading="lazy">
+    <img src="img/tip-6.jpg" alt="Don't follow every haircare trend you see online" loading="lazy">
+    <img src="img/tip-4.jpg" alt="Examples of protective styles" loading="lazy">
+    <img src="img/styles.jpg" alt="Cornrows, mini braids, mini twists and African threading" loading="lazy">
+  </div>
   <p class="credit">Style photos are from Pinterest, for educational purposes.</p>
 </section>
 
-<section id="results" class="section center">
-  <h2>Real hair, real results</h2>
-  <p class="sub">See more reviews and results on our Instagram and TikTok.</p>
+<section id="results" class="sec">
+  <div class="head reveal"><p class="kicker">Results</p><h2>Real hair. <em>Real glow.</em></h2><p class="sub">More reviews and results on our Instagram and TikTok.</p></div>
   <div class="gallery">
-    <img src="img/afro.jpg" alt="Full afro puff">
-    <img src="img/hair-back.jpg" alt="Healthy, long natural hair">
-    <img src="img/hold-bottle.jpg" alt="Hair Oil Mix in hand">
-    <img src="img/lineup.jpg" alt="Mane Naturals full product set">
+    <img class="reveal" src="img/afro.jpg" alt="Full afro puff" loading="lazy">
+    <img class="reveal" src="img/hair-back.jpg" alt="Long, healthy natural hair with Hair Oil Mix" loading="lazy">
+    <img class="reveal" src="img/hold-bottle.jpg" alt="Holding Hair Oil Mix" loading="lazy">
+    <img class="reveal" src="img/oil-grass.jpg" alt="Hair Oil Mix on the grass" loading="lazy">
   </div>
 </section>
 
-<section class="cta">
-  <div>
-    <h2>Ready to pamper your strands?</h2>
-    <p>Send us a DM to order. We're on Instagram and TikTok at <strong>@_manenaturals</strong>.</p>
-  </div>
-  <div class="cta-btns">
-    <a class="btn" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Instagram</a>
-    <a class="btn btn-ghost light" href="https://www.tiktok.com/@_manenaturals" target="_blank" rel="noopener">TikTok</a>
+<section class="final reveal">
+  <h2>Ready to pamper <em>your strands?</em></h2>
+  <p>DM us to order. We're on Instagram and TikTok at <b>@_manenaturals</b>.</p>
+  <div class="cta-row center">
+    <a class="btn btn-lime" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn btn-line" href="https://www.tiktok.com/@_manenaturals" target="_blank" rel="noopener">TikTok</a>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="logo">🦁 Mane <span>Naturals</span></div>
+  <div class="brand"><img src="icon-192.png" alt="" width="34" height="34"><span>Mane <em>Naturals</em></span></div>
   <p>Natural hair products that help you take care and pamper your strands.</p>
-  <p class="small">© <span id="y"></span> Mane Naturals · Ghana 🇬🇭</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@_manenaturals" target="_blank" rel="noopener">TikTok</a>
+  </div>
+  <p class="small">© <span id="y"></span> Mane Naturals · Ghana</p>
+  <p class="design">Designed by <a href="http://baidenz-studioz-web.vercel.app" target="_blank" rel="noopener">Baidenz Studioz</a></p>
 </footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+<a class="dock" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order on Instagram <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<script src="script.js" defer></script>
 </body>
 </html>
