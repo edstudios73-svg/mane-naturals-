@@ -1,0 +1,14 @@
+{
+  "name": "Mane Naturals",
+  "short_name": "Mane Naturals",
+  "description": "Natural hair products from Ghana that help you take care of and pamper your strands.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fdf6e3",
+  "theme_color": "#0a4d26",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
