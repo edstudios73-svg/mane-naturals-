@@ -9,9 +9,13 @@
   addEventListener('keydown',function(e){if(e.key==='Escape')menu(false)});
 
   var ticking=false;
-  function onScroll(){nav.classList.toggle('solid',scrollY>10);dock.classList.toggle('off',scrollY<hero.offsetHeight*.6);ticking=false}
+  var lastY=0;
+  function onScroll(){var y=scrollY;nav.classList.toggle('solid',y>10);nav.classList.toggle('hide',y>lastY&&y>160&&sheet.hidden);lastY=y;dock.classList.toggle('off',y<hero.offsetHeight*.6);ticking=false}
   addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
   onScroll();
+
+  var secs=['products','hair-101','results'].map(function(id){return document.getElementById(id)}),links=document.querySelectorAll('.links a');
+  if('IntersectionObserver' in window){var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});secs.forEach(function(s){so.observe(s)})}
 
   var slides=document.querySelectorAll('.arch .s'),tabs=document.querySelectorAll('#tabs button'),bar=document.getElementById('cb'),box=document.getElementById('visual');
   var cur=0,DUR=3000,start=performance.now(),visible=false,raf;
