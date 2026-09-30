@@ -8,11 +8,12 @@
   sheet.addEventListener('click',function(e){if(e.target.tagName==='A')setMenu(false)});
   addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
 
-  var hero=document.querySelector('.hero'),img=document.querySelector('.arch img'),ticking=false;
+  var hero=document.querySelector('.hero'),img=document.querySelector('.arch'),ticking=false;
+  var vis0=document.getElementById('visual');
   function onScroll(){
     var y=scrollY;nav.classList.toggle('solid',y>30);
     if(dock)dock.classList.toggle('off',y<hero.offsetHeight*.5);
-    if(!reduce&&y<innerHeight*1.2)img.style.transform='translateY('+(-y*.06)+'px)';
+    if(!reduce&&y<innerHeight*1.2)vis0.style.transform='translateY('+(-y*.05)+'px)';
     ticking=false;
   }
   addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
@@ -24,6 +25,16 @@
     vis.addEventListener('pointerleave',function(){vis.style.transform=''});
     vis.style.transition='transform .25s';
   }
+
+  // hero: load reveal, slideshow, spotlight, magnetic button
+  requestAnimationFrame(function(){setTimeout(function(){document.documentElement.classList.add('loaded')},reduce?0:350)});
+  var slides=document.querySelectorAll('.arch .s'),names=['Hair Oil Mix','Real hair, real glow','The full range'],cn=document.getElementById('cn'),ct=document.getElementById('ct'),cb=document.getElementById('cb'),cur=0,DUR=5000,t0=performance.now();
+  function show(n){slides[cur].classList.remove('on');cur=n;var s=slides[cur];s.classList.remove('on');void s.offsetWidth;s.classList.add('on');cn.textContent='0'+(cur+1);ct.textContent=names[cur];t0=performance.now()}
+  function tick(now){var p=Math.min((now-t0)/DUR,1);cb.style.width=(p*100)+'%';if(p>=1)show((cur+1)%slides.length);requestAnimationFrame(tick)}
+  if(!reduce&&slides.length)requestAnimationFrame(tick);
+  var spot=document.getElementById('spot');
+  hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();spot.style.setProperty('--mx',(e.clientX-r.left)+'px');spot.style.setProperty('--my',(e.clientY-r.top)+'px')});
+  if(!reduce&&matchMedia('(hover:hover)').matches){document.querySelectorAll('.magnet').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.2)+'px,'+((e.clientY-r.top-r.height/2)*.3)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})})}
 
   var els=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){

@@ -46,25 +46,44 @@
 </div>
 
 <main id="top">
-<section class="hero">
-  <div class="glow g1"></div><div class="glow g2"></div>
+<section class="hero" id="hero">
+  <div class="curtain" aria-hidden="true"></div>
+  <div class="glow g1"></div><div class="glow g2"></div><div class="spot" id="spot"></div>
+  <div class="frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <p class="folio"><span>Nº 01</span><span>Natural hair care · Est. Ghana</span></p>
+
   <div class="hero-copy">
-    <p class="eyebrow"><span class="dot"></span> Made in Ghana · Natural hair care</p>
-    <h1 class="split" aria-label="Oil it. Grow it. Own your mane.">
-      <span class="w">Oil it.</span> <span class="w">Grow it.</span> <span class="w lime">Own your <em>mane.</em></span>
+    <p class="eyebrow"><span class="dot"></span> Made in Ghana 🇬🇭</p>
+    <h1 aria-label="Oil it. Grow it. Own your mane.">
+      <span class="ln"><span>Oil it.</span></span>
+      <span class="ln"><span>Grow it.</span></span>
+      <span class="ln"><span>Own your <em>mane.</em></span></span>
     </h1>
     <p class="lead">Essential oils and minerals, bottled for textured hair. Nourish your scalp. Pamper your strands.</p>
     <div class="cta-row">
-      <a class="btn btn-lime" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order on Instagram <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-lime magnet" href="https://www.instagram.com/_manenaturals/" target="_blank" rel="noopener">Order on Instagram <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn-line" href="#products">Shop the range</a>
     </div>
+    <ul class="facts">
+      <li><b>100%</b><span>natural</span></li>
+      <li><b>4</b><span>products</span></li>
+      <li><b>60</b><span>GHS · oil</span></li>
+    </ul>
   </div>
 
   <div class="hero-visual" id="visual">
     <div class="ring"></div>
     <figure class="arch" id="arch">
-      <img src="img/hero.jpg" alt="Mane Naturals Hair Oil Mix bottles with the lion label" fetchpriority="high" width="600" height="800">
+      <img class="s on" src="img/hero.jpg" alt="Mane Naturals Hair Oil Mix bottles with the lion label" fetchpriority="high" width="800" height="1064">
+      <img class="s" src="img/hold-bottle.jpg" alt="Holding Hair Oil Mix outdoors" loading="lazy">
+      <img class="s" src="img/set.jpg" alt="The full Mane Naturals range" loading="lazy" style="object-position:62% 60%">
+      <div class="shade"></div>
     </figure>
+    <div class="cap" aria-live="off">
+      <span class="num"><b id="cn">01</b>/03</span>
+      <span class="ttl" id="ct">Hair Oil Mix</span>
+      <span class="bar"><i id="cb"></i></span>
+    </div>
     <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
       <defs><path id="c" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
       <text><textPath href="#c" startOffset="0">100% NATURAL • MADE IN GHANA • MANE NATURALS •</textPath></text>
@@ -72,10 +91,9 @@
       <text x="100" y="98" text-anchor="middle" class="b-big">60</text>
       <text x="100" y="118" text-anchor="middle" class="b-sm">GHS · OIL</text>
     </svg>
-    <div class="chip chip-a"><b>Hair Oil Mix</b><span>100ml · essential oils + minerals</span></div>
   </div>
 
-  <a class="scroll" href="#products" aria-label="Scroll to products"><span></span></a>
+  <a class="scroll" href="#products" aria-label="Scroll to products"><span></span><em>Scroll</em></a>
 </section>
 
 <div class="marquee" aria-hidden="true">
